@@ -37,18 +37,10 @@ h3 {
     font-style: medium;
     color: rgb(61, 0, 0);
 }
-.programas{
+.programas,.cursos,.educacion,.aptitudes {
     color: rgb(55, 58, 64);
 }
-.cursos {
-    color: rgb(55, 58, 64);
-}
-.educacion {
-    color: rgb(55, 58, 64);
-}
-.aptitudes {
-    color: rgb(55, 58, 64);
-}
+
 h4 {
     font-style: medium italic;
     text-transform: uppercase;
