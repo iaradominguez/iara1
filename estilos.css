@@ -4,55 +4,75 @@
     margin: 0px;
     padding: 0px;
 }
-#cabecera {
-    padding: 40px;
-    text-align: left;
-    background-color: rgb(246, 245, 242);
-    color: white;
-}
-header {
-    align-items: center;
-    font-family: "Monospace";
-}
 @font-face {
-    font-family: "Monospace";
-    src: url("fonts/DMMono-Medium.ttf") format('truetype');
+    font-family: "Outfit";
+    src: url("fonts/Outfit-Regular.ttf") format('truetype');
     font-weight: normal;
     font-style: medium;
 }
-body {
-    font-family: "Monospace";
+#cabecera {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(152, 112, 112);
+    color: white;
 }
-h1 {
-    font-family: "Monospace";
-    font-weight: 400;
-    font-style: Medium italic;
-    text-transform: uppercase;
+nav {
+    background-color: rgb(195, 152, 152);
+    padding: 40px;
+    text-align: center;
 }
-h2 {
-    font-style: italic;
-    font-weight: 500;
-}
-h3 {
-    font-style: medium;
-    color: rgb(61, 0, 0);
-}
-.programas,.cursos,.educacion,.aptitudes {
-    color: rgb(55, 58, 64);
-}
-
-h4 {
-    font-style: medium italic;
-    text-transform: uppercase;
-}
-
 nav ul li {
     list-style: none;
     display: inline;
     padding: 10px 30px;
-    border: 1px solid black;
+    border: 1px solid #420516;
+    border-radius: 3em;
     background-color: white;
 }
+
+body {
+    font-family: "Outfit"; 
+    background-color: rgb(246, 245, 242);
+}
+.presentacion {
+    background-color: rgb(243, 231, 231);
+    padding: 0px;
+    margin-left: 0px;
+}
+.info{
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+.masinfo{
+    background-color: rgb(195, 152, 152);
+    color: rgb(255, 255, 255);
+}
+h2 {
+    font-family: "Outfit";
+    font-weight: 400px;
+    font-style: bold;
+    text-transform: uppercase;
+}
+h3 {
+    font-style: italic;
+    font-weight: 500;
+}
+h4 {
+    font-style: medium;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.trabajos{
+    background-color: rgb(255, 249, 249);
+}
+
+h5 {
+    font-style: bold;
+    text-transform: uppercase;
+    color: #420516;
+}
+
 a {
     text-decoration: none;
 }
@@ -65,8 +85,9 @@ a:hover {
 }
 footer {
     font-size: smaller;
-    color: rgb(104, 109, 118);
+    color: white;
     padding: 10px;
     text-align: center;
-    background-color: rgb(245, 247, 248);
+    background-color: rgb(152, 112, 112);
 }
+
