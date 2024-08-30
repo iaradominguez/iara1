@@ -34,41 +34,95 @@ body {
     font-family: "Outfit"; 
     background-color: rgb(246, 245, 242);
 }
-.presentacion {
-    background-color: rgb(243, 231, 231);
-    padding: 0px;
-    margin-left: 0px;
+.img{
+    border-radius: 30px;
 }
+h2 {
+    font-family: "Outfit";
+    font-size: 80px;
+    font-style: light;
+    color: rgb(94, 65, 65);
+}
+.presentacion {
+    background-color: rgb(254, 245, 245);
+    color: rgb(74, 74, 74);
+    display: flex;
+    padding: 70px;
+    margin-left: 0px;
+    font-size: 20px;
+}
+.textopresentacion{
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    align-items: baseline;
+    text-wrap: pretty;
+}
+
 .info{
     background-color: white;
     padding: 20px;
     text-align: center;
 }
-.masinfo{
+.textosobremi{
+    font-size: 20px;
+    padding: 100px;
+}
+.container{
     background-color: rgb(195, 152, 152);
     color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
 }
-h2 {
-    font-family: "Outfit";
-    font-weight: 400px;
-    font-style: bold;
-    text-transform: uppercase;
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 70px;
 }
+
 h3 {
-    font-style: italic;
-    font-weight: 500;
+    font-style:  italic;
+    font-size: 70px;
 }
 h4 {
     font-style: medium;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
+    font-size: 30px;
+    align-self: center;
 }
-.trabajos{
-    background-color: rgb(255, 249, 249);
+.h5{
+    padding: 70px;
+    font-size: 40px;
+    color: #420516;
+    font-style: bold;
 }
+.trabajoscont {
+    background-color: rgb(254, 245, 245);
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+}
+
+.tpbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 100px 70px;
+}
+.titulos{
+    font-size: 30px;
+    font-style: bold;
+}
+.tp{
+    border-radius: 30px;
+}
+
 
 h5 {
     font-style: bold;
+    font-size: 50px;
     text-transform: uppercase;
     color: #420516;
 }
@@ -88,6 +142,6 @@ footer {
     color: white;
     padding: 10px;
     text-align: center;
-    background-color: rgb(152, 112, 112);
+    background-color: rgb(195, 152, 152);
 }
 
