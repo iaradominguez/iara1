@@ -13,11 +13,11 @@
 #cabecera {
     padding: 20px;
     text-align: center;
-    background-color: rgb(152, 112, 112);
+    background-color: rgb(105, 78, 78);
     color: white;
 }
 nav {
-    background-color: rgb(195, 152, 152);
+    background-color: rgb(193, 163, 163);
     padding: 40px;
     text-align: center;
 }
@@ -28,11 +28,12 @@ nav ul li {
     border: 1px solid #420516;
     border-radius: 3em;
     background-color: white;
+    filter: drop-shadow(2px 3px 3px rgb(88, 87, 87));
 }
-
 body {
     font-family: "Outfit"; 
     background-color: rgb(246, 245, 242);
+    cursor: url(img/cursor.png), auto;
 }
 .img{
     border-radius: 30px;
@@ -44,59 +45,74 @@ h2 {
     color: rgb(94, 65, 65);
 }
 .presentacion {
-    background-color: rgb(254, 245, 245);
+    background-color: rgb(253, 247, 247);
     color: rgb(74, 74, 74);
     display: flex;
     padding: 70px;
-    margin-left: 0px;
     font-size: 20px;
+    filter: drop-shadow(3px 4px 4px grey);
 }
 .textopresentacion{
     display: flex;
     flex-direction: column;
     padding: 70px;
-    align-items: baseline;
-    text-wrap: pretty;
 }
-
+.experiencia{
+    background-image: url(img/fondoexp.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: rgb(94, 65, 65);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    align-items: stretch;
+    text-align-last: end;
+}
+.laboral{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: flex-end;
+}
 .info{
     background-color: white;
     padding: 20px;
     text-align: center;
+    filter: drop-shadow(2px 3px 3px rgb(67, 67, 67));
 }
 .textosobremi{
     font-size: 20px;
     padding: 100px;
 }
 .container{
-    background-color: rgb(195, 152, 152);
+    background-color: rgb(193, 163, 163);
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     padding: 50px;
+    filter: drop-shadow(2px 3px 3px grey)
 }
 .row{
     display: flex;
     justify-content: space-between;
     padding: 100px 70px;
+    background-color: rgb(251, 244, 244); 
+    border-radius: 20px;
+    color: rgb(74, 74, 74);
+    filter: drop-shadow(2px 3px 3px rgb(229, 219, 219))
 }
-
 h3 {
     font-style:  italic;
-    font-size: 70px;
+    font-size: 50px;
 }
-h4 {
+h5 {
     font-style: medium;
-    color: rgb(255, 255, 255);
+    color: rgb(105, 78, 78);
     text-transform: uppercase;
     font-size: 30px;
     align-self: center;
-}
-.h5{
-    padding: 70px;
-    font-size: 40px;
-    color: #420516;
-    font-style: bold;
 }
 .trabajoscont {
     background-color: rgb(254, 245, 245);
@@ -104,7 +120,6 @@ h4 {
     flex-direction: column;
     padding: 70px;
 }
-
 .tpbox{
     display: flex;
     justify-content: space-between;
@@ -118,15 +133,6 @@ h4 {
 .tp{
     border-radius: 30px;
 }
-
-
-h5 {
-    font-style: bold;
-    font-size: 50px;
-    text-transform: uppercase;
-    color: #420516;
-}
-
 a {
     text-decoration: none;
 }
@@ -137,11 +143,22 @@ a:hover {
     color: rgb(100, 56, 67);
     font-size: 2em;
 }
-footer {
+.tpsrow img:hover {
+    border: 5px solid #987070;
+}
+.iconos{
+    display: flex;
+    gap: 30px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     font-size: smaller;
     color: white;
-    padding: 10px;
-    text-align: center;
-    background-color: rgb(195, 152, 152);
+    padding: 20px;
+    background-color: rgb(105, 78, 78);
+    align-items: center;
 }
+
 
