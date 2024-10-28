@@ -10,6 +10,15 @@
     font-weight: normal;
     font-style: medium;
 }
+
+body {
+    font-family: "Outfit"; 
+    background-color: rgb(246, 245, 242);
+    cursor: url(img/cursor.png), auto;
+}
+
+/*-------------------SECCION HEADER--------------------*/
+
 #cabecera {
     padding: 20px;
     text-align: center;
@@ -30,109 +39,43 @@ nav ul li {
     background-color: white;
     filter: drop-shadow(2px 3px 3px rgb(88, 87, 87));
 }
-body {
-    font-family: "Outfit"; 
-    background-color: rgb(246, 245, 242);
-    cursor: url(img/cursor.png), auto;
-}
-.img{
-    border-radius: 30px;
-}
+
+/*-------------------FIN SECCION HEADER--------------------*/
+
 h2 {
     font-family: "Outfit";
     font-size: 80px;
     font-style: light;
     color: rgb(94, 65, 65);
-}
-.presentacion {
-    background-color: rgb(253, 247, 247);
-    color: rgb(74, 74, 74);
     display: flex;
-    padding: 70px;
-    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.presentacion{
+    background-image: url(img/fondopresentacion.png);
+    background-size: 100% auto;
+    padding: 210px;
+    background-repeat: no-repeat;
     filter: drop-shadow(3px 4px 4px grey);
 }
-.textopresentacion{
+.textopresentacion {
     display: flex;
     flex-direction: column;
-    padding: 70px;
+    align-items: center;
 }
-.experiencia{
-    background-image: url(img/fondoexp.png);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-color: rgb(94, 65, 65);
-    color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    padding: 60px;
-    align-items: stretch;
-    text-align-last: end;
-}
-.laboral{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
-    align-items: flex-end;
-}
-.info{
+.trabajemosjuntos{
     background-color: white;
     padding: 20px;
-    text-align: center;
-    filter: drop-shadow(2px 3px 3px rgb(67, 67, 67));
 }
-.textosobremi{
-    font-size: 20px;
+.textotrabajemos{
+    font-size: 25px;
+    font-style: italic;
     padding: 100px;
-}
-.container{
-    background-color: rgb(193, 163, 163);
-    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    filter: drop-shadow(2px 3px 3px grey)
+    align-items: center;
 }
-.row{
-    display: flex;
-    justify-content: space-between;
-    padding: 100px 70px;
-    background-color: rgb(251, 244, 244); 
-    border-radius: 20px;
-    color: rgb(74, 74, 74);
-    filter: drop-shadow(2px 3px 3px rgb(229, 219, 219))
-}
-h3 {
-    font-style:  italic;
-    font-size: 50px;
-}
-h5 {
-    font-style: medium;
-    color: rgb(105, 78, 78);
-    text-transform: uppercase;
-    font-size: 30px;
-    align-self: center;
-}
-.trabajoscont {
-    background-color: rgb(254, 245, 245);
-    display: flex;
-    flex-direction: column;
-    padding: 70px;
-}
-.tpbox{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 100px 70px;
-}
-.titulos{
-    font-size: 30px;
-    font-style: bold;
-}
-.tp{
-    border-radius: 30px;
-}
+
 a {
     text-decoration: none;
 }
@@ -143,9 +86,8 @@ a:hover {
     color: rgb(100, 56, 67);
     font-size: 2em;
 }
-.tpsrow img:hover {
-    border: 5px solid #987070;
-}
+
+/*-----------------------------------------FOOTER-------------------------------------*/
 .iconos{
     display: flex;
     gap: 30px;
