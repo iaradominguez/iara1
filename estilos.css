@@ -13,7 +13,6 @@
 
 body {
     font-family: "Outfit"; 
-    background-color: rgb(246, 245, 242);
     cursor: url(img/cursor.png), auto;
 }
 
@@ -29,7 +28,6 @@ nav {
     background-color: rgb(193, 163, 163);
     padding: 40px;
     text-align: center;
-    filter: drop-shadow(2px 3px 3px rgb(240, 224, 224));
 }
 nav ul li {
     list-style: none;
@@ -41,25 +39,53 @@ nav ul li {
     filter: drop-shadow(2px 3px 3px rgb(88, 87, 87));
 }
 
-/*-------------------FIN SECCION HEADER--------------------*/
-
+@keyframes mover-izquierda-derecha{
+   from{
+    transform: translateX(-100px);
+   }
+   to{
+    transform: translateX(50px);
+   } 
+}
 h2 {
-    font-family: "Outfit";
     font-size: 80px;
-    font-style: light;
     color: rgb(94, 65, 65);
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    animation: mover-izquierda-derecha 2s 1;
+    animation-fill-mode: forwards;
 }
+#cabecera img {
+    animation: girar 3s infinite linear;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes mover-izquierda-centro{
+    from{
+     transform: translateX(-100px);
+    }
+    to{
+     transform: translateX(10px);
+    } 
+ }
+/*-------------------SOBRE MI--------------------*/
 h3 {
-    font-style:  italic;
+    font-style:  bold;
     font-size: 60px;
     color: #420516;
+    animation: mover-izquierda-centro 2s 1;
+    animation-fill-mode: forwards;
 }
 h4 {
     font-size: 25px;
-    font-style: medium;
     color: #420516;
 }
 .imgcv{
@@ -67,13 +93,11 @@ h4 {
 }
 .sobremi{
     background-color: #FFFDFD;
-    color: rgb(27, 27, 27);
     display: flex;
     padding: 70px
 }
 .container{
     background-color: rgb(193, 163, 163);
-    color: rgb(255, 255, 255);
     padding: 50px;
 }
 .row{
@@ -81,17 +105,15 @@ h4 {
     justify-content: space-evenly;
     padding: 90px 50px;
     background-color: rgb(251, 244, 244);
-    border-radius: 20px;
     color: rgb(74, 74, 74);
     font-size: 15px;
     border-radius: 3em;
     filter: drop-shadow(2px 3px 3px rgb(229, 219, 219))
 }
 .textosobremi {
-    display: flex;
-    flex-direction: column;
     padding: 70px;
 }
+/*-------------------PRESENTACION--------------------*/
 .presentacion{
     background-image: url(img/fondopresentacion.png);
     background-size: 100% auto;
@@ -103,9 +125,9 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #6a6a6a;
 }
 .trabajemosjuntos{
-    background-color: white;
     padding: 20px;
 }
 .textotrabajemos{
@@ -116,10 +138,11 @@ h4 {
     flex-direction: column;
     align-items: center;
 }
+
+/*-------------------TRABAJOS--------------------*/
 .descripcionproyecto{
     background-color: #FFFDFD;
     padding: 50px 90px;
-    border-radius: 0px 0px 30px 30px;
 }
 .textoproyecto {
     font-style: italic;
@@ -138,13 +161,17 @@ h4 {
     gap: 150px
 }
 .infog {
-    background-color: #FFFDFD;
+    background-color: #7f6666;
+    color: rgb(222, 222, 222);
     filter: drop-shadow(3px 4px 4px grey);
     padding: 100px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     gap: 150px
+}
+.titulo_info{
+    color: white;
 }
 .latte {
     background-color: white;
@@ -157,10 +184,24 @@ h4 {
 .imgproyectos{
     border-radius: 30px;
 }
+.imgproyectos:hover{
+    border: 5px solid #987070;
+    transform: scale(1.1);
+}
 .texto_proyecto{
+    padding: 30px;
+}
+/*-------------------GALERIA--------------------*/
+.igybehance {
+    background-color: #420516;
+    border-radius: 30px 0px 0px 30px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    gap: 15px;
+    position: absolute;
+    top: 50%;
+    right: 0px;
 }
 .descripciongaleria{
     font-style:  italic;
@@ -170,12 +211,10 @@ h4 {
     flex-direction: column;
     align-items: center;
     padding: 50px 90px;
-
 }
-
 .containergaleria{
     columns: 3;
-    width: 1020px;
+    width: 90%;
     margin: 4px auto;
     padding: 20px;
 }
@@ -187,11 +226,55 @@ h4 {
     border-radius: 20px;
     box-shadow: 0px 4px 8px 0px #9b999a;
 }
-
+.containergaleria .caja img:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+/*-------------------CONTACTO--------------------*/
 h5{
     padding: 10px 50px;
     font-size: 50px;
     color: #420516;
+}
+.titulo_formulario{
+    padding: 10px 50px;
+    font-size: 50px;
+    color: #420516;
+}
+.formulario{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #fdf8f8;
+    filter: drop-shadow(0px 4px 8px 0px #9b999a);
+    padding: 120px 100px 100px;
+}
+label{
+    font-size: 15px;
+    color: rgb(98, 98, 98);
+    padding: 10px;
+}
+
+input[type=submit]{
+    margin-top: 30px;
+    background-color: rgb(156, 138, 138);
+    color: white;
+    text-transform: uppercase; 
+}
+input {
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid #420516;
+    filter: drop-shadow(3px 4px 4px grey);
+    padding: 15px 95px;
+}
+form{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 a {
     text-decoration: none;
@@ -199,9 +282,77 @@ a {
 }
 a:hover {
     color: rgb(100, 56, 67);
-    font-size: 2em;
+    font-size: 20px;
 }
+/****************************MEDIA QUERIES / 600px **************************/
+@media screen and (max-width: 600px) {
+    body{
+        font-size: 0.75em;
+    }
+    #cabecera{
+        padding: 10px;
+    }
 
+    /*SOBRE MI ---------*/
+
+    .sobremi{
+        padding: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav{
+        height: 100px;
+    }
+    nav ul li {
+        margin: 15px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .imgcv{
+        width: 100%;
+        max-width: 400px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    h4{
+        font-size: 17px;
+    }
+    h5{
+        font-size: 25px;
+    }
+    .row{
+        padding: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 20px;
+        font-size: 10px;
+    }
+
+    /*TRABAJOS ---------*/
+
+    .edit{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .infog{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .latte{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .imgproyectos{
+        width: 450px;
+        height: 334px;
+    }
+}
 /*-----------------------------------------FOOTER-------------------------------------*/
 .iconos{
     display: flex;
@@ -217,5 +368,3 @@ footer{
     background-color: rgb(105, 78, 78);
     align-items: center;
 }
-
-
